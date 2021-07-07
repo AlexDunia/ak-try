@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+	overflow: :hidden;
+}
+
+a{
+	text-decoration:none;
+	color:#555;
+}
+
+p{
+	color:#555;
+}
+
+ul{
+	list-style-type:none;
+}
+
+body{
+	font-family: raleway;
+}
+
+
+.firstvideo{
+	display:flex;
+	margin:auto;
+	width:80%;
+	margin-bottom:40px;
+}
+
+.yttext{
+	padding:0 80px;
+	font-weight: 20em;
+}
+
+.yttext h3{
+	font-size:17px;
+	font-weight: 500;
+	margin-bottom:10px;
+}
+
+.yttext small{
+	margin-bottom:800px;
+}
+
+
+.yttext p{
+	margin-top:25px;
+	line-height:2.5em;
+	font-size:13px;
+}
+
+
+iframe{
+	width:400px;
+	height:250px;
+}
+
+
+
+.white{
+	background-color:white;
+}
+
+.smallcontainer{
+	padding:2px 0;
+	align-items:center;
+	text-align:center;
+	display:flex;
+	justify-content: space-around;
+}
+
+.smallcontainer li{
+	display:inline;
+	margin-right:50px;
+}
+
+.container{
+	margin:auto;
+	display:flex;
+	width:80%;
+	margin-top:70px;
+
+}
+
+.amazing{
+	width:50%;
+	flex:2;
+}
+
+.amazing2{
+	flex:2;
+}
+
+.amazing img{
+	width:76%;
+}
+
+.amazing2 h2{
+   font-weight: 450;
+   margin-bottom:30px;
+}
+
+.amazing2 p{
+	line-height:2.9em;	
+}
+
+.afooter{
+	width:40%;
+	text-align:center;
+
+}
+
+.afooter img{
+	width:15%;
+}
+
+.afooter p{
+	font-size:13px;
+}
+
+.follow{
+	margin-top:30px;
+	display:flex;
+}
+
+.mainbrands{
+	display:flex;
+	margin:auto;
+	text-align:center;
+	width:60%;
+	margin-top:180px;
+}
+
+.brands img{
+	width:30%;
+}

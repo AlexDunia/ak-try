@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="help widows, foundation, eleanoras foundation">
+<meta name="keyword" content="web development, build websites">
+<title> Not Just Another Photographer </title>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+   
+
+
+
+
+  <nav id="menuItemm"> 
+  	<img src="images/xblack.png" width="30px" height="30px" class="menu" onclick="menutoggle()">
+        <ul> 
+          <li>  <a href="index.html"> Photos </a></li>
+		<li> <a href="video.html"> Videos </a> </li>
+		<li> <a href="about.html"> About </a></li>
+		<li> Contact </li>
+		<li> Shop </li>
+		<li> <a href="https://www.theamazingklef.com/cinematographyAktivated Tv"> AKtivated TV </a> </li>
+        </ul>     
+      </nav>
+
+	<div class="bgimage">
+        <img src="images/menu.png" class="specialicon" width="25px" height="25px" onclick="menutoggle()"> 
+    </div>
+
+    <div class="middle">
+    <div class="white">
+
+    <div class="smallcontainer">
+    	<div class="logo">
+    		<img src="images/ak.png" width="120px">
+    	</div>
+	<ul>
+		<li>  <a href="index.html"> Photos </a></li>
+		<li> <a href="video.html"> Videos </a> </li>
+		<li> <a href="about.html"> About </a></li>
+		<li> Contact </li>
+		<li> Shop </li>
+		<li> <a href="https://www.theamazingklef.com/cinematographyAktivated Tv"> AKtivated TV </a> </li>
+	</ul>
+    </div>
+    </div>
+</div>
+
+
+<div class="allflex">
+
+<div class="firstflex">
+
+	<div class="image1">
+		<img src="images/1.jpg">
+    </div>
+
+    <div class="image1">
+		<img src="images/2.jpg">
+    </div>
+
+    <div class="image3">
+		<img src="images/3.JPG">
+    </div>
+
+     <div class="image3">
+		<img src="images/4.JPG">
+    </div>
+
+     <div class="cinematic">
+		<img src="images/cinematic.JPG">
+    </div>
+
+     <div class="image3">
+		<img src="images/6.JPG">
+    </div>
+
+     <div class="image3">
+		<img src="images/7.JPG">
+    </div>
+
+     <div class="image3">
+		<img src="images/8.JPG">
+    </div>
+
+</div>
+
+
+<div class="secondflex">
+
+	<div class="image9">
+		<img src="images/9.JPG">
+    </div>
+
+    <div class="image10">
+		<img src="images/10.jpg">
+    </div>
+
+    <div class="image11">
+		<img src="images/11.JPG">
+    </div>
+
+     <div class="image11">
+		<img src="images/12.JPG">
+    </div>
+
+     <div class="image11">
+		<img src="images/13.JPG">
+    </div>
+
+     <div class="image11">
+		<img src="images/14.JPG">
+    </div>
+
+    
+</div>
+
+<div class="thirdflex">
+
+	<div class="image15">
+		<img src="images/15.JPG">
+    </div>
+
+    <div class="image15">
+		<img src="images/16.jpg">
+    </div>
+
+    <div class="image17" id="img17" onclick="openFullscreen()">
+		<img src="images/17.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/18.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/19.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/20.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/21.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/22.JPG">
+    </div>
+
+     <div class="image17" onclick="openFullscreen()">
+		<img src="images/23.JPG">
+    </div>
+
+    <div class="image17" onclick="openFullscreen()">
+		<img src="images/24.JPG">
+    </div>
+
+</div>
+
+</div>
+
+
+<div class="reachus fixed">
+
+<div class="reach">
+
+    <div class="cwu">
+        <a href="#"> Chat with us </a>
+    </div>
+
+    <div class="wa">
+        <img src="images/wa.png">
+    </div>
+
+ </div>
+
+</div> 
+
+</body>
+
+
+<script>
+/* Get the element you want displayed in fullscreen mode (a video in this example): */
+var elem = document.getElementById("img17");
+
+/* When the openFullscreen() function is executed, open the video in fullscreen.
+Note that we must include prefixes for different browsers, as they don't support the requestFullscreen property yet */
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+
+ const pic = document.querySelector(".bgimage");
+  const manu = document.querySelector(".menu");
+ const mainmenu = document.getElementById("menuItemm");
+ const icon = document.querySelector("specialicon")
+ const element = document; 
+
+ const cancellFullScreen = document.exitFullscreen || document.mozCancelFullScreen || document.webkitExitFullscreen || document.msExitFullscreen;
+cancellFullScreen.call(document);
+
+const requestFullScreen = element.requestFullscreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+requestFullScreen.call(element);
+
+
+
+
+
+ function menutoggle(){
+ 
+ if (mainmenu.style.display === "block")
+ {
+ 	
+ 	mainmenu.style.display = "none";
+ 	document.exitFullscreen()
+ 	
+ 
+ }
+ else 
+ {
+    mainmenu.style.display = "block";
+    mainmenu.requestFullscreen()
+ 
+    
+}
+}
+
+const fruits = ["apple", "orange", "cherry", "banana"];
+
+fruits.forEach(function(eachItem){
+	console.log(eachItem);
+});
+
+</script>
+</html>
